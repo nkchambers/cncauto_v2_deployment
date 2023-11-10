@@ -22,19 +22,19 @@ module.exports = (app) => {
     // ------------------------- Vehicle Rental CRUD Routes -----------------------
 
     // CREATE Vehicle Rental
-    app.post('/vehicleRentals', VehicleRental.createVehicleRental);
+    app.post('/api/vehicleRentals', VehicleRental.createVehicleRental);
     
     // READ ALL Vehicle Rentals
-    app.get('/vehicleRentals', VehicleRental.allVehicleRentals);
+    app.get('/api/vehicleRentals', VehicleRental.allVehicleRentals);
 
     // READ ALL USER (ADMIN) Vehicle Rentals
-    app.get('/user-vehicleRentals', VehicleRental.userVehicleRentals);
+    app.get('/api/user-vehicleRentals', VehicleRental.userVehicleRentals);
 
     // READ ONE Vehicle Rental
-    app.get('/vehicleRentals/:id', VehicleRental.oneUserVehicleRental);
+    app.get('/api/vehicleRentals/:id', VehicleRental.oneUserVehicleRental);
 
     //UPDATE Vehicle Rental
-    app.put('/vehicleRentals', VehicleRental.updateUserVehicleRental);
+    app.put('/api/vehicleRentals', VehicleRental.updateUserVehicleRental);
 
 
 
@@ -42,16 +42,16 @@ module.exports = (app) => {
     // ------------------------- BROWSE BY EXPERIENCE Vehicle Rental Routes ---------------------------
 
     // READ ALL Sedan Rentals
-    app.get('/sedan-vehicleRentals', VehicleRental.allSedanRentals);
+    app.get('/api/sedan-vehicleRentals', VehicleRental.allSedanRentals);
 
     // READ ALL Van Rentals
-    app.get('/van-vehicleRentals', VehicleRental.allVanRentals);
+    app.get('/api/van-vehicleRentals', VehicleRental.allVanRentals);
 
     // READ ALL Truck Rentals
-    app.get('/truck-vehicleRentals', VehicleRental.allTruckRentals);
+    app.get('/api/truck-vehicleRentals', VehicleRental.allTruckRentals);
 
     // READ ALL SUV Rentals
-    app.get('/suv-vehicleRentals', VehicleRental.allSuvRentals);
+    app.get('/api/suv-vehicleRentals', VehicleRental.allSuvRentals);
 
 
 
@@ -59,9 +59,9 @@ module.exports = (app) => {
     // ----------------------------- BROWSE BY CITY Vehicle Rental Routes ------------------------------
 
     // READ ALL Seattle Rentals
-    app.get('/seattle-vehicleRentals', VehicleRental.allSeattleRentals);
+    app.get('/api/seattle-vehicleRentals', VehicleRental.allSeattleRentals);
 
     // READ ALL Seattle Rentals
-    app.get('/newYork-vehicleRentals', VehicleRental.allNewYorkRentals);
+    app.get('/api/newYork-vehicleRentals', VehicleRental.allNewYorkRentals);
     
 }

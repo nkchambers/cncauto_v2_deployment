@@ -10,9 +10,9 @@ module.exports = (app) => {
     })
 
     // Auth Routes
-    app.post('/register', User.registerUser);
-    app.post('/login', User.loginUser);
-    app.get('/profile', User.verifyUser);
-    app.post('/logout', User.logoutUser);
+    app.post('/api/register', User.registerUser);
+    app.post('/api/login', User.loginUser);
+    app.get('/api/profile', User.verifyUser);
+    app.post('api/logout', User.logoutUser);
 
 }

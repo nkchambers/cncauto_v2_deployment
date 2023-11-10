@@ -9,7 +9,7 @@ module.exports = (app) => {
     })
 
     // Booking Routes
-    app.post('/bookings', VehicleRental.createBooking);
-    app.get('/bookings', VehicleRental.allUserBookings);
-    app.delete('/bookings/delete/:id', VehicleRental.deleteBooking);
+    app.post('/api/bookings', VehicleRental.createBooking);
+    app.get('/api/bookings', VehicleRental.allUserBookings);
+    app.delete('/api/bookings/delete/:id', VehicleRental.deleteBooking);
 }
