@@ -30,7 +30,7 @@ const VehicleForSaleForm = () => {
         if (!id) {
             return;
         }
-        axios.get('/vehiclesForSale/' + id)
+        axios.get('/api/vehiclesForSale/' + id)
             .then(response => {
                 const { data } = response;
                 setYear(data.year);
@@ -96,14 +96,14 @@ const VehicleForSaleForm = () => {
 
         if (id) {
             // update
-            await axios.put('/vehiclesForSale', {
+            await axios.put('/api/vehiclesForSale', {
                 id, ...vehicleForSaleData
             });
             setRedirect(true);
 
         } else {
             // new place
-            await axios.post('/vehiclesForSale', vehicleForSaleData);
+            await axios.post('/api/vehiclesForSale', vehicleForSaleData);
             setRedirect(true);
         }
     }
