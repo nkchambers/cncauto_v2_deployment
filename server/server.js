@@ -95,7 +95,7 @@ app.post('/api/upload-by-link', async (req, res) => {
 
 
 // Multer upload funcionality
-const photosMiddleware = multer({ dest: '/api/uploads' });
+const photosMiddleware = multer({ dest: 'uploads' });
 
 
 // UPLOAD added place images
