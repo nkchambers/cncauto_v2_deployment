@@ -10,7 +10,7 @@ const UserProfile = () => {
 
     const [redirect, setRedirect] = useState(null);
     const { ready, user, setUser } = useContext(UserContext);
-    let { subpage } = useParams('/api/profile');
+    let { subpage } = useParams();
 
     if (subpage === undefined) {
         subpage = 'profile';
