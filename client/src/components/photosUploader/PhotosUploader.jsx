@@ -8,7 +8,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
 
     async function addPhotoByLink(e) {
         e.preventDefault();
-        const { data: filename } = await axios.post('/api/upload-by-link', { link: photoLink });
+        const { data: filename } = await axios.post('/upload-by-link', { link: photoLink });
 
         onChange(prev => {
             return [...prev, filename];
@@ -24,7 +24,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
             data.append('photos', files[i]);
         }
 
-        axios.post('/api/upload', data, {
+        axios.post('/upload', data, {
             headers: { 'Content-type': 'multipart/form-data' }
         })
             .then(response => {
@@ -68,7 +68,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
                     <div className='mt-4 h-32 flex relative' key={link}>
                         <img
                             className='rounded-2xl w-full object-cover'
-                            src={'http://localhost:5000/api/uploads/' + link}
+                            src={'http://localhost:5000/uploads/' + link}
                             alt=""
                         />
                         <button

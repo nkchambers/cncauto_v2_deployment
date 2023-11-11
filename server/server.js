@@ -35,7 +35,7 @@ app.use(express.json(), express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-app.use('/api/uploads', express.static(__dirname + '/api/uploads'));
+app.use('/uploads', express.static(__dirname + '/uploads'));
 
 app.use(cors({
     credentials: true,
@@ -81,14 +81,14 @@ app.get('/test', (req, res) => {
 
 
 // ADD place images by link
-app.post('/api/upload-by-link', async (req, res) => {
+app.post('/upload-by-link', async (req, res) => {
 
     const { link } = req.body;
     const newName = 'photo' + Date.now() + '.jpg';
 
     await imageDownloader.image({
         url: link,
-        dest: __dirname + '/api/uploads/' + newName,
+        dest: __dirname + '/uploads/' + newName,
     });
     res.json(newName);
 });
@@ -99,7 +99,7 @@ const photosMiddleware = multer({ dest: 'uploads' });
 
 
 // UPLOAD added place images
-app.post('/api/upload', photosMiddleware.array('photos', 100), (req, res) => {
+app.post('/upload', photosMiddleware.array('photos', 100), (req, res) => {
     const uploadedFiles = [];
 
     for (let i = 0; i < req.files.length; i++) {
