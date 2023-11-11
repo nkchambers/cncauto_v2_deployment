@@ -29,7 +29,7 @@ const SingleVehicleRental = () => {
         if (!id) {
             return;
         }
-        axios.get(`/vehicleRentals/${id}`)
+        axios.get(`/api/vehicleRentals/${id}`)
             .then(response => {
                 setVehicleRental(response.data);
             });

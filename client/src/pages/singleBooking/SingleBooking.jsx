@@ -27,7 +27,7 @@ const SingleBooking = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get('/bookings')
+            axios.get('/api/bookings')
                 .then(response => {
                 const foundBooking = response.data.find(({ _id }) => _id === id);
                 if (foundBooking) {
@@ -46,7 +46,7 @@ const SingleBooking = () => {
     const deleteBooking = (deleteId) => {
 
         // Make axios call to server to instruct db to delete
-        axios.delete(`/bookings/delete/${deleteId}`)
+        axios.delete(`/api/bookings/delete/${deleteId}`)
             .then(response => {
                 console.log(response.data);
                 console.log('Booking Canceled');

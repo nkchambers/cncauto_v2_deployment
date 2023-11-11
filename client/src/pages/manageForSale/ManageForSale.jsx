@@ -9,7 +9,7 @@ const ManageForSale = () => {
     const [vehiclesForSale, setVehiclesForSale] = useState([]);
 
     useEffect(() => {
-        axios.get('/user-vehiclesForSale')
+        axios.get('/api/user-vehiclesForSale')
             .then(({ data }) => {
                 setVehiclesForSale(data);
             });

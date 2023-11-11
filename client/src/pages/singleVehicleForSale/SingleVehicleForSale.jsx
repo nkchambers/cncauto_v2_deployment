@@ -27,7 +27,7 @@ const SingleVehicleForSale = () => {
         if (!id) {
             return;
         }
-        axios.get(`/vehiclesForSale/${id}`)
+        axios.get(`/api/vehiclesForSale/${id}`)
             .then(response => {
                 setVehicleForSale(response.data);
             });

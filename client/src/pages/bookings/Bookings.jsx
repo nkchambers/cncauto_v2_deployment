@@ -11,7 +11,7 @@ const Bookings = () => {
 
     // USE EFFECT to render all user bookings to profile bookings page
     useEffect(() => {
-        axios.get('/bookings')
+        axios.get('/api/bookings')
             .then(response => {
                 setBookings(response.data);
             });

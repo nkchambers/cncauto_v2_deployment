@@ -19,7 +19,7 @@ const Register = () => {
     async function registerUser (e) {
         e.preventDefault();
         try {
-            await axios.post('/register', {
+            await axios.post('/api/register', {
                 firstName,
                 lastName,
                 email,

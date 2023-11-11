@@ -9,7 +9,7 @@ const VehiclesForSale = () => {
 
 
     useEffect(() => {
-        axios.get('/vehiclesForSale')
+        axios.get('/api/vehiclesForSale')
             .then(response => {
                 setVehiclesForSale(response.data);
             });

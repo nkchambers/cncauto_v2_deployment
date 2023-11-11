@@ -9,7 +9,7 @@ const ManageRentals = () => {
     const [vehicleRentals, setVehicleRentals] = useState([]);
 
     useEffect(() => {
-        axios.get('/user-vehicleRentals')
+        axios.get('/api/user-vehicleRentals')
             .then(({ data }) => {
                 setVehicleRentals(data);
             });

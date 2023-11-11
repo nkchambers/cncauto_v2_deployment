@@ -9,7 +9,7 @@ const TruckRentals = () => {
 
 
     useEffect(() => {
-        axios.get('/truck-vehicleRentals')
+        axios.get('/api/truck-vehicleRentals')
             .then(response => {
                 setVehicleRentals(response.data);
             });
