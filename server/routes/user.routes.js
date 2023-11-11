@@ -13,6 +13,6 @@ module.exports = (app) => {
     app.post('/api/register', User.registerUser);
     app.post('/api/login', User.loginUser);
     app.get('/api/profile', User.verifyUser);
-    app.post('api/logout', User.logoutUser);
+    app.post('/api/logout', User.logoutUser);
 
 }
