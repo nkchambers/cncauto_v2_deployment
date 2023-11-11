@@ -43,7 +43,7 @@ app.use(cors({
     // origin: 'http://localhost:5173'
     // origin: '*'
     // AWS EC2
-    origin: 'http://35.91.128.202:5000'
+    origin: 'http://35.91.128.202/*'
     // Linode
     // origin: 'http://172.232.170.81/'
 }));

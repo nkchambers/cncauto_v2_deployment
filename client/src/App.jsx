@@ -28,7 +28,7 @@ import SingleBooking from './pages/singleBooking/SingleBooking';
 
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:5000';  
+axios.defaults.baseURL = 'http://35.91.128.202:5000';  
 
 function App() {
 
