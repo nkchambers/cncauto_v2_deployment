@@ -10,13 +10,10 @@ const UserProfile = () => {
 
     const [redirect, setRedirect] = useState(null);
     const { ready, user, setUser } = useContext(UserContext);
-    let { subpage } = useParams();
+    let { subpage } = useParams('/api/profile');
 
     if (subpage === undefined) {
-        subpage = axios.get('/api/profile')
-                    .then(response => {
-                        setUser(response.data);
-                    });
+        subpage = 'profile';
     }
 
     
