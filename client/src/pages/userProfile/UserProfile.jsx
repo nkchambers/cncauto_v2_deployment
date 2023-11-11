@@ -15,7 +15,7 @@ const UserProfile = () => {
     if (subpage === undefined) {
         subpage = axios.get('/api/profile')
                     .then(response => {
-                        setUser(data);
+                        setUser(response.data);
                     });
     }
 
