@@ -43,7 +43,7 @@ const BookingWidget = ({ vehicleRental }) => {
 
     async function onToken(token) {
         if (user) {
-            const response = await axios.post('/bookings', {
+            const response = await axios.post('/api/bookings', {
                 token,
                 checkIn,
                 checkOut, 

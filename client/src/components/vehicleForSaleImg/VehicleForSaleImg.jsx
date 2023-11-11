@@ -11,7 +11,7 @@ const VehicleForSaleImg = ({vehicleForSale, index = 0, className = null}) => {
     }
 
     return (
-        <img className={className} src={'http://localhost:5000/uploads/' + vehicleForSale.photos[index]} alt="" />
+        <img className={className} src={'http://localhost:5000/api/uploads/' + vehicleForSale.photos[index]} alt="" />
     )
 }
 
