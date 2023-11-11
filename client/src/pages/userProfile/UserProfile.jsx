@@ -13,7 +13,7 @@ const UserProfile = () => {
     let { subpage } = useParams();
 
     if (subpage === undefined) {
-        subpage = 'profile';
+        subpage = '/api/profile';
     }
 
     
