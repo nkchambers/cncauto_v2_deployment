@@ -68,7 +68,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
                     <div className='mt-4 h-32 flex relative' key={link}>
                         <img
                             className='rounded-2xl w-full object-cover'
-                            src={'http://localhost:5000/uploads/' + link}
+                            src={'http://localhost:5000/api/uploads/' + link}
                             alt=""
                         />
                         <button

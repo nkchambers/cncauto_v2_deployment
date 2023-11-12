@@ -22,7 +22,7 @@ const VehicleRentalGallery = ({ vehicleRental }) => {
                     {vehicleRental?.photos?.length > 0 && vehicleRental.photos.map(photo => (
                         <div className='flex justify-center bs2 py-8 my-3 rounded-2xl'>
                             <img
-                                src={'http://localhost:5000/uploads/' + photo}
+                                src={'http://localhost:5000/api/uploads/' + photo}
                                 alt=""
                                 width='900px'
                                 height='auto'
@@ -45,7 +45,7 @@ const VehicleRentalGallery = ({ vehicleRental }) => {
                             <img
                                 onClick={() => setShowAllPhotos(true)}
                                 className='aspect-square object-cover cursor-pointer'
-                                src={'http://localhost:5000/uploads/' + vehicleRental.photos[0]} 
+                                src={'http://localhost:5000/api/uploads/' + vehicleRental.photos[0]} 
                                 alt=""
                             />
                         </div>
@@ -56,7 +56,7 @@ const VehicleRentalGallery = ({ vehicleRental }) => {
                         <img
                             onClick={() => setShowAllPhotos(true)}
                             className='aspect-square object-cover cursor-pointer'
-                            src={'http://localhost:5000/uploads/' + vehicleRental.photos[1]} 
+                            src={'http://localhost:5000/api/uploads/' + vehicleRental.photos[1]} 
                             alt=""
                         />
                     )}
@@ -65,7 +65,7 @@ const VehicleRentalGallery = ({ vehicleRental }) => {
                             <img
                                 onClick={() => setShowAllPhotos(true)}
                                 className='aspect-square object-cover cursor-pointer relative top-2'
-                                src={'http://localhost:5000/uploads/' + vehicleRental.photos[2]} 
+                                src={'http://localhost:5000/api/uploads/' + vehicleRental.photos[2]} 
                                 alt=""
                             />
                         )}
