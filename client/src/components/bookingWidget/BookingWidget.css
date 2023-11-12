@@ -2,6 +2,24 @@
     background-color: rgb(33, 37, 41);
 }
 
+.ant-picker-time-panel {
+    display: none;
+}
+
+.ant-picker-range-wrapper .ant-btn-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+    
+
+.ant-btn-primary {
+    color: black;
+    border: 2px solid #0da1fd;
+    font-size: 16px !important;
+}
+
 .priceTitle {
     color: white;
     font-style: italic;

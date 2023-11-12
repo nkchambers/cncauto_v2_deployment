@@ -65,28 +65,6 @@ const BookingWidget = ({ vehicleRental }) => {
     }
 
 
-    // async function bookVehicleRental() {
-    //     // if (user) {
-    //     //     const response = await axios.post('/bookings', {
-    //     //         checkIn,
-    //     //         checkOut, 
-    //     //         name,
-    //     //         email, 
-    //     //         phoneNumber, 
-    //     //         vehicleRental: vehicleRental._id,
-    //     //         totalHours,
-    //     //         totalPrice: Math.ceil(totalHours / 24) * vehicleRental.pricePerDay
-    //     //     });
-    
-    //     //     const bookingId = response.data._id;
-    //     //     setRedirect(`/account/bookings/${bookingId}`);
-    //     // }
-    //     // else {
-    //     //     alert('Create an account or login to book vehicle');
-    //     //     setRedirect('/register');
-    //     // }
-    // }
-
     if (redirect) {
         return <Navigate to={redirect} />
     }
@@ -106,7 +84,7 @@ const BookingWidget = ({ vehicleRental }) => {
                             format='MMM Do YYYY hh:mm a'
                             minuteStep={'15'}
                             onChange={selectDates}
-                            style={{padding: '15px', margin: '20px 10px'}}
+                            style={{padding: '15px', margin: '20px 10px', border: 'primary'}}
                         />
                     </Space>
                 </div>
