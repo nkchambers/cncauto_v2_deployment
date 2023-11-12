@@ -32,7 +32,7 @@ const TruckRentals = () => {
                                 {vehicleRental.photos?.[0] && (
                                     <img
                                         className='rounded-2xl object-cover aspect-square'
-                                        src={'http://localhost:5000/uploads/' + vehicleRental.photos?.[0]} alt=""
+                                        src={'http://localhost:5000/api/uploads/' + vehicleRental.photos?.[0]} alt=""
                                     />
                                 )}
                             </div>
