@@ -44,8 +44,6 @@ app.use(cors({
     // origin: '*'
     // AWS EC2
     origin: 'http://35.91.128.202'
-    // Linode
-    // origin: 'http://172.232.170.81/'
 }));
 
 
