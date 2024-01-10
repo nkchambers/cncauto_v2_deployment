@@ -17,7 +17,7 @@ const Footer = () => {
                 <a href="/contact">Contact</a>
             </div>
             <div className="footerText">
-                Copyright © 2023 C&C Auto.
+                Copyright 2023 C&C Auto.
                 <br/>
                 All rights reserved.
             </div>

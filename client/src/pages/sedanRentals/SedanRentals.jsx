@@ -27,7 +27,7 @@ const SedanRentals = () => {
             <div className='bg-dark rounded-2xl py-10 px-8 mt-10 gap-x-8 gap-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 
                 {/* Place holder until we get sedans to rent */}
-                <p className='sedanSoonTitle'>Sedan Rentals Coming Soon!</p>
+                {/* <p className='sedanSoonTitle'>Sedan Rentals Coming Soon!</p> */}
 
                 {vehicleRentals.length > 0 && vehicleRentals.map(vehicleRental => (
                     <div className='sedanRentalContainer'>

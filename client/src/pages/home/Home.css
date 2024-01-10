@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    width: 99vw;
+    width: 100vw;
     padding-top: 70px;
 }
 
@@ -29,8 +29,7 @@
     justify-content: center;
     letter-spacing: 1px;
     opacity: 0.9;
-    padding: 10px 20px;
-    margin: 10px 0px;
+    padding: 0px 20px;
 }
 
 .missionServiceContainer .faIcons {
@@ -38,20 +37,19 @@
 }
 
 .missionTitle {
-    font-size: 32px;
+    font-size: 30px;
     font-style: italic;
-    padding: 20px 0px;
+    padding: 10px;
     opacity: 0.9;
-    margin: 10px;
 }
 
 .missionDesc {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 22px;
+    font-size: 20px;
     opacity: 0.9;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: 10px;
 }
 
@@ -65,7 +63,6 @@
 
 .servicesContainer {
     width: 100%;
-    margin: 0px 20px;
 }
 
 .servicesTitleContainer {
@@ -73,11 +70,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 35px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .servicesTitle {
-    font-size: 32px;
+    font-size: 30px;
     font-style: italic;
     opacity: 0.9;
 }
@@ -87,19 +84,18 @@
     align-items: center;
     justify-content: flex-start;
     list-style: none;
-    font-size: 22px;
+    font-size: 20px;
     padding: 10px;
     letter-spacing: 2px;
 }
 
 .serviceItems { 
     padding-top: 10px;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 
 .locationsContainer {
     width: 100%;
-    margin: 0px 20px;
 }
 
 .locationsTitleContainer {
@@ -107,11 +103,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 35px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .locationsTitle {
-    font-size: 32px;
+    font-size: 30px;
     font-style: italic;
     opacity: 0.9;
 }
@@ -119,15 +115,15 @@
 .locationItemList {
     display: inline-block;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 2px;
     padding: 10px;
 }
 
 .locationItems { 
     padding-top: 10px;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 

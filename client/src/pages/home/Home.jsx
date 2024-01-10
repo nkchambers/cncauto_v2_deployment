@@ -21,7 +21,7 @@ const Home = () => {
 
             <div className="missionServiceContainer text-white">
                 <div>
-                <hr className='my-8' />
+                <hr className='my-10' />
 
                     <h3 className='missionTitle font-semibold'>Our Mission</h3>
                     <p className='missionDesc'>
@@ -29,7 +29,7 @@ const Home = () => {
                         Whether you want to take a car for a test drive or need a fun car to drive while on vacation, rest assured, we have you covered!
                     </p>
 
-                    <hr className='my-12' />
+                    <hr className='my-10' />
                 </div>
             
                 <div className='serviceLocationContainer'>
@@ -41,10 +41,10 @@ const Home = () => {
 
                         <div className="serviceItemList">
                             <p className="serviceItems">- Vehicle Rentals</p>
-                            <p className="serviceItems">- Vehicles Sales</p>
+                            <p className="serviceItems">- Vehicle Sales</p>
                         </div>
 
-                        <hr className='my-12' />
+                        <hr className='my-10' />
                     </div>
 
                     <div className="locationsContainer">
@@ -58,7 +58,7 @@ const Home = () => {
                             <p className="locationItems">- New York, NY</p>
                         </div>
 
-                        <hr className='my-12' />
+                        <hr className='my-10' />
                     </div>
                 </div>
             </div>
