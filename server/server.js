@@ -42,7 +42,7 @@ app.use(cors({
     // Localhost
     // origin: 'http://localhost:5173'
     // AWS EC2
-    origin: 'http://34.219.70.75/'
+    origin: 'http://35.87.45.135/'
 }));
 
 
