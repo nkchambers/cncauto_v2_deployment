@@ -35,13 +35,12 @@ app.use(express.json(), express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-app.use('/api/uploads', express.static(__dirname + '/api/uploads'));
+app.use('/api/uploads', express.static(__dirname + '/uploads'));
 
 app.use(cors({
     credentials: true,
     // Localhost
-    origin: 'http://localhost:5173',
-    // origin: '*'
+    // origin: 'http://localhost:5173'
     // AWS EC2
     origin: 'http://34.219.70.75/'
 }));
@@ -86,7 +85,7 @@ app.post('/api/upload-by-link', async (req, res) => {
 
     await imageDownloader.image({
         url: link,
-        dest: __dirname + '/api/uploads/' + newName,
+        dest: __dirname + '/uploads/' + newName,
     });
     res.json(newName);
 });
