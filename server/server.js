@@ -40,7 +40,7 @@ app.use('/api/uploads', express.static(__dirname + '/api/uploads'));
 app.use(cors({
     credentials: true,
     // Localhost
-    // origin: 'http://localhost:5173'
+    origin: 'http://localhost:5173',
     // origin: '*'
     // AWS EC2
     origin: 'http://34.219.70.75/'
